@@ -31,17 +31,17 @@ $ require 'ezaliyun-ams'
 2、配置
 ```ruby
 $ EzaliyunAms.configure do |config|
-    config.access_key_secret = ACCESS_KEY_SECRET # 阿里云接入密钥，在阿里云控制台申请
-    config.access_key_id = ACCESS_KEY_ID         # 阿里云接入 ID, 在阿里云控制台申请
+    config.access_key_secret = 'ACCESS_KEY_SECRET' # 阿里云接入密钥，在阿里云控制台申请
+    config.access_key_id = 'ACCESS_KEY_ID'         # 阿里云接入 ID, 在阿里云控制台申请
   end
 ```
 ### rails配置
 在 Rails 应用目录 config/initializers/ 下创建脚本文件 ezaliyun-ams.rb，在文件中加入以下内容：
 ```ruby
 EzaliyunAms.configure do |config|
-  config.access_key_secret = ACCESS_KEY_SECRET # 阿里云接入密钥，在阿里云控制台申请
-  config.access_key_id = ACCESS_KEY_ID         # 阿里云接入 ID, 在阿里云控制台申请
-  config.format = 'JSON'                       # 这一行可以不写，我默认的使用JSON，如果需要还可以使用XML
+  config.access_key_secret = 'ACCESS_KEY_SECRET' # 阿里云接入密钥，在阿里云控制台申请
+  config.access_key_id = 'ACCESS_KEY_ID'         # 阿里云接入 ID, 在阿里云控制台申请
+  config.format = 'JSON'                         # 这一行可以不写，我默认的使用JSON，如果需要还可以使用XML
 end
 ```
 ### 使用
